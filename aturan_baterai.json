@@ -1,0 +1,86 @@
+{
+  "topik": "Identifikasi Penyebab Baterai Smartphone Cepat Habis dan Rekomendasi Penanganannya",
+  "metode": "Forward Chaining",
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["layar_terlalu_terang"],
+      "maka": "konsumsi_layar_tinggi",
+      "nama": "Kecerahan layar tinggi",
+      "jenis": "faktor",
+      "penjelasan": "Kecerahan layar yang tinggi dapat meningkatkan konsumsi daya.",
+      "rekomendasi": "Kurangi kecerahan layar atau aktifkan kecerahan otomatis."
+    },
+    {
+      "id": "R2",
+      "jika": ["banyak_aplikasi_berjalan"],
+      "maka": "aktivitas_latar_belakang_tinggi",
+      "nama": "Aktivitas aplikasi di latar belakang",
+      "jenis": "faktor",
+      "penjelasan": "Aplikasi yang terus aktif dapat menggunakan daya meskipun tidak sedang dibuka.",
+      "rekomendasi": "Periksa penggunaan baterai dan batasi aktivitas aplikasi yang tidak diperlukan."
+    },
+    {
+      "id": "R3",
+      "jika": ["sinyal_lemah"],
+      "maka": "konsumsi_jaringan_tinggi",
+      "nama": "Sinyal jaringan lemah",
+      "jenis": "faktor",
+      "penjelasan": "Koneksi jaringan yang tidak stabil dapat meningkatkan konsumsi daya.",
+      "rekomendasi": "Coba gunakan ponsel di lokasi dengan sinyal lebih kuat."
+    },
+    {
+      "id": "R4",
+      "jika": ["fitur_konektivitas_aktif"],
+      "maka": "periksa_penggunaan_fitur",
+      "nama": "Fitur konektivitas perlu diperiksa",
+      "jenis": "faktor",
+      "penjelasan": "Wi-Fi, Bluetooth, atau GPS yang terus aktif dapat menambah penggunaan daya, bergantung pada pemakaiannya.",
+      "rekomendasi": "Matikan fitur yang tidak sedang digunakan."
+    },
+    {
+      "id": "R5",
+      "jika": ["konsumsi_layar_tinggi", "aktivitas_latar_belakang_tinggi"],
+      "maka": "kombinasi_pemakaian_tinggi",
+      "nama": "Kombinasi faktor penggunaan",
+      "jenis": "kombinasi",
+      "penjelasan": "Kecerahan layar tinggi dan aktivitas aplikasi latar belakang terdeteksi bersamaan.",
+      "rekomendasi": "Lakukan kedua langkah penghematan daya: sesuaikan layar dan periksa aplikasi."
+    },
+    {
+      "id": "R6",
+      "jika": ["kombinasi_pemakaian_tinggi"],
+      "maka": "evaluasi_pola_pemakaian",
+      "nama": "Evaluasi pola pemakaian diperlukan",
+      "jenis": "lanjutan",
+      "penjelasan": "Kesimpulan ini diperoleh dari hasil R5 yang menggabungkan dua faktor penggunaan.",
+      "rekomendasi": "Pantau perubahan konsumsi baterai setelah pengaturan layar dan aplikasi diperbaiki."
+    },
+    {
+      "id": "R7",
+      "jika": ["fitur_konektivitas_aktif", "sinyal_lemah"],
+      "maka": "periksa_koneksi_dan_fitur",
+      "nama": "Periksa jaringan dan konektivitas",
+      "jenis": "kombinasi",
+      "penjelasan": "Fitur konektivitas aktif dan sinyal lemah terdeteksi bersamaan sehingga pengaturan koneksi perlu diperiksa.",
+      "rekomendasi": "Cari lokasi dengan sinyal lebih baik dan matikan koneksi yang tidak diperlukan."
+    },
+    {
+      "id": "R8",
+      "jika": ["baterai_menurun_dari_biasanya"],
+      "maka": "periksa_kondisi_baterai",
+      "nama": "Kemungkinan penurunan daya tahan baterai",
+      "jenis": "pemeriksaan",
+      "penjelasan": "Daya tahan yang menurun dibandingkan sebelumnya menjadi alasan untuk memeriksa kondisi baterai, tetapi belum membuktikan kerusakan.",
+      "rekomendasi": "Periksa kesehatan baterai melalui pengaturan atau layanan pemeriksaan resmi perangkat."
+    },{
+      "id": "R9",
+      "jika": ["baru_memperbarui_sistem"],
+      "maka": "konsumsi_sementara_pasca_pembaruan",
+      "nama": "Kemungkinan konsumsi daya sementara setelah pembaruan",
+      "jenis": "pemeriksaan",
+      "penjelasan": "Setelah pembaruan, proses sistem dapat sementara meningkatkan penggunaan daya.",
+      "rekomendasi": "Pantau penggunaan baterai selama beberapa waktu. Jika masalah berlanjut, periksa aplikasi dan kondisi perangkat."
+    }
+  ]
+}
