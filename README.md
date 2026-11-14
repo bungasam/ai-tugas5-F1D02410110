@@ -101,5 +101,5 @@ Sistem ini menggunakan aturan IF–THEN yang telah ditentukan dan bergantung pad
 
 ## 8. Penggunaan AI
 
-AI digunakan sebagai alat bantu untuk memahami konsep Forward Chaining, menyusun rancangan aturan, membantu pengembangan kode Python.
+AI digunakan sebagai alat bantu untuk memahami konsep Forward Chaining, menyusun rancangan aturan, dan membantu pengembangan kode Python.
 
