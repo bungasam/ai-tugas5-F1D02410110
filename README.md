@@ -86,13 +86,13 @@ Tahapan proses:
 ### Dokumentasi Pengujian
 
 #### Pengujian 1 — Kombinasi faktor penggunaan
-![pengujian 1](screenshoot/uji1.png)
+![pengujian 1](screenshot/uji1.png)
 
 #### Pengujian 2 — Gangguan jaringan dan konektivitas
-![pengujian 2](screenshoot/uji2.png)
+![pengujian 2](screenshot/uji2.png)
 
 #### Pengujian 3 — Tidak ada kesimpulan
-![pengujian 3](screenshoot/uji3.png)
+![pengujian 3](screenshot/uji3.png)
 
 
 ## 7. Keterbatasan Sistem
